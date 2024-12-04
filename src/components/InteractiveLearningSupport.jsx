@@ -34,9 +34,9 @@ export const InteractiveLearningSupport = () => {
           {learningSteps.map((step, index) => (
             <div 
               key={index}
-              className={\`p-4 rounded-lg border \${
+              className={`p-4 rounded-lg border ${
                 activeStep === index ? 'border-blue-500 bg-blue-50' : ''
-              }\`}
+              }`}
             >
               <div className="flex justify-between items-center mb-2">
                 <h3 className="font-semibold">{step.title}</h3>

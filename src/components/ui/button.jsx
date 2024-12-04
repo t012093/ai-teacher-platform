@@ -14,7 +14,7 @@ export const Button = React.forwardRef(({ className, variant = "default", size =
     lg: "h-11 rounded-md px-8",
   };
 
-  const classes = \`\${baseStyles} \${variants[variant]} \${sizes[size]} \${className || ''}\`;
+  const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className || ''}`;
 
   return (
     <button

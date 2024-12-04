@@ -1,4 +1,4 @@
-{`import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Progress } from './ui/progress';
@@ -64,9 +64,9 @@ export const EnhancedAITeacher = () => {
               {renderInteractiveElement()}
               <ScrollArea className="h-[400px] rounded-md border p-4">
                 {messages.map((msg, idx) => (
-                  <div key={idx} className={\`mb-4 p-4 rounded-lg \${
+                  <div key={idx} className={`mb-4 p-4 rounded-lg ${
                     msg.role === 'user' ? 'bg-blue-50' : 'bg-gray-50'
-                  }\`}>
+                  }`}>
                     {msg.content}
                   </div>
                 ))}

@@ -4,7 +4,7 @@ export const ScrollArea = React.forwardRef(({ className, children, ...props }, r
   return (
     <div
       ref={ref}
-      className={\`relative overflow-auto \${className || ''}\`}
+      className={`relative overflow-auto ${className || ''}`}
       {...props}
     >
       {children}
